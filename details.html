@@ -2,120 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
-<body class="bg-dark tex-light">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid" id="contenedor">
-                <img src="./assets/img/Logo Amazing Events.png" alt="Logo Amazing Events" class="img-fluid h-100"
-                    id="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="./index.html">Home</a>
-                        <a class="nav-link" href="./upcomingEvents.html">Upcoming Events</a>
-                        <a class="nav-link" href="./pastEvents.html">Past Events</a>
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                        <a class="nav-link active" aria-current="page" href="#">Stats</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="container d-flex justify-content-center mt-5 pt-5">
-        <div class="container border rounded d-flex flex-column flex-lg-row gap-5 bg-warning-subtle detailsContainer">
-            <div class="detailsImg py-3 d-flex justify-content-center justify-content-lg-start align-items-lg-center">
-                <img src="./assets/img/Logo Amazing Events.png" alt="details image" class="rounded">
-            </div>
-            <div class="detailsSubContainer d-flex flex-column gap-5">
-                <div class="container-fluid pt-3 bg-success-subtle text-center rounded-3 mt-3">
-                    <h2>Details</h2>
-                </div>
-                <ul>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Name :</h4>
-                            <p>name</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Date :</h4>
-                            <p>date</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Description:</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit harum
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Category :</h4>
-                            <p>category</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Place :</h4>
-                            <p>place</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Capacity :</h4>
-                            <p>capacity</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="listContainer">
-                            <h4>Assistance or estimate :</h4>
-                            <p>estimate</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="listContainer">
-                            <h4>Price :</h4>
-                            <p>price</p>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="./assets/img/logoAmazingEvents.png" alt="Logo Amazing Events" class="img-fluid" id="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./upcomingEvents.html">Upcoming Events</a>
+            <a class="nav-link" href="./pastEvents.html">Past Events</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="./stats.html">Stats</a>
+          </div>
         </div>
-    </main>
+      </div>
+    </nav>
 
-    <footer class="container-fluid p-2 d-flex bg-dark justify-content-between">
-        <div class="d-flex gap-3 ps-4">
-            <a href="#" <i class="bi bi-instagram"></i></a>
-            <a href="#" <i class="bi bi-facebook"></i></a>
-            <a href="#" <i class="bi bi-whatsapp"></i></a>
+    <div class="navbar-dos py-4 text-center d-none d-sm-flex d-md-flex">
+      <h1 class="titulo font-semibold">Details</h1>
+    </div>
+  </header>
+  
+  <main class="d-flex justify-content-center">
+    <div class="py-5">
+      <div class="row rounded-lg shadow-lg border-2 border-secondary">
+        <img src="https://www.portalpampeano.com.ar/wp-content/uploads/2020/10/cat-350x250.jpg" alt="Item Image" class="col-md-6 img-fluid h-50 px-0">
+        <div class="col-md-6 bg-dark p-4 d-flex flex-column">
+          <h2 class="text-primary fw-bold mb-4">Item Details</h2>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Name:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Date:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Description:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Category:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Place:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Capacity:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Assistance or Estimate:</h3>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-secondary fw-bold me-2 d-inline-block">Price:</h3>
+          </div>
         </div>
-        <div class="pe-5 customGrey">
-            <h5>FE15-TM</h5>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="container-fluid p-2 d-flex bg-dark justify-content-between">
+    <div class="d-flex align-items-center gap-3 ps-4">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-whatsapp"></i></a>
+    </div>
+    <div class="pe-5 text-white d-flex align-items-center">
+      <h5>FE15-TM</h5>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
