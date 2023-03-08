@@ -50,12 +50,44 @@ main{
  align-self: center;
 }
 
+.container-contact{
+  min-width: 70%;
+}
+
 .card{
   max-width: 19rem;
+  min-height: 28.6rem;
+  margin: 1rem;
 }
 .card-img-top {
-  height: 10rem;
+  height: 7.5rem;
   width: 16rem;
   object-fit: cover;
 }
-
+.card-title-main{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-color:#BFAEC1;
+  border-radius: 100vmax 100vmax 0vmax 0;
+}
+.card-text,.card-data{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 1vh;
+  padding: 0.5vh;
+  background-color: #F4B4F9;
+}
+.card-text{
+  padding-inline: 0.3vw;
+  min-height: 5rem;
+}
+.title-container{
+  margin-top: 0.5rem;
+  margin-inline: 1rem;
+  padding-top: 1vh;
+  border-radius: 100vmax;
+  background-color: #E4DCE4;
+}
+.footer-card{
+ display: flex;
+ align-items: center;
+}
