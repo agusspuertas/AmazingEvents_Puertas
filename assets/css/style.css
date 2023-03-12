@@ -21,6 +21,12 @@ main{
 .navbar-toggler-icon {
   font-size: 0.8em;
 }
+
+.navbar-nav{
+  font-size: 1.2rem;
+  align-items: center;
+}
+
 .navbar-nav .nav-link {
   font-size: 1.2rem;
 }
@@ -48,6 +54,29 @@ main{
 .icono{
   margin-inline: 5em;
  align-self: center;
+}
+
+.lupita{
+  border: 0;
+  border-radius: 50%;
+  background-color: #b64e96;
+  font-size: 1.2em;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.search-container{
+  margin-left: auto;
+}
+
+#search{
+  border-radius: 4rem;
+  height: 2rem;
+}
+
+.search input[type="text"] {
+  text-align:left;
+  padding: 0.3rem 1rem 0.4rem 1rem;
 }
 
 .container-contact{
@@ -90,4 +119,25 @@ main{
 .footer-card{
  display: flex;
  align-items: center;
+}
+
+@media (max-width: 991px){
+  .seccion-formulario{
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .search-container{
+    display: flex;
+    margin-left: 0%;
+  }
+  .category-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px){
+  .category-form{
+    flex-direction: column;
+  }
 }
