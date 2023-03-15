@@ -28,3 +28,7 @@ function showData(containerData) {
 }
 
 showData(container);
+let cantegoryContainer= document.getElementById("category-form")
+categoryChecks(formArray, cantegoryContainer)
+
+
