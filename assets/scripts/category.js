@@ -1,4 +1,4 @@
-
+let cantegoryContainer= document.getElementById("category-form")
 
 let events = data.events;
 let arrayCategories = events.map(element=>element.category)
@@ -18,7 +18,5 @@ function categoryChecks(array, container) {
         `
     }
     container.innerHTML = html
-    
-
 }
-
+categoryChecks(formArray, cantegoryContainer)
