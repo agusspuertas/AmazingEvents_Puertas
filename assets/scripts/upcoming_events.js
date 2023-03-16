@@ -1,7 +1,7 @@
 const container = document.getElementById('upcoming-container');
 console.log(data)
 let dateFilter = eventFilter(data.events, data.currentDate);
-const events = dateFilter 
+events = dateFilter 
 
 function eventFilter(events, currentDate) {
     let dataFilter = []

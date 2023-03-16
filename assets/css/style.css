@@ -84,6 +84,10 @@ main{
   padding: 0.3rem 1rem 0.4rem 1rem;
 }
 
+.table{
+  height: 50rem;
+}
+
 .container-contact{
   min-width: 70%;
 }
@@ -92,14 +96,12 @@ main{
   height: 100vh;
 }
 
-
 .card-container{
   min-height: 100vh;
 }
 
 .card{
   max-width: 19rem;
-  /* min-height: 28.6rem; */
   min-height: 24,5;
   margin: 1rem;
 }
