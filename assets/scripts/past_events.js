@@ -1,10 +1,11 @@
-const pastContainer = document.getElementById('past-container');
+let container = document.getElementById('past-container');
 
 let dateFilter = eventFilter(data.events, data.currentDate);
+const events = dateFilter 
 
 function eventFilter(events, currentDate) {
     let dataFilter = []
-    for (i = 0; i < events.length; i++) {
+    for (i = 0; i <events.length; i++) {
         if (events[i].date < currentDate) {
             dataFilter.push(events[i]);
         };
@@ -12,4 +13,4 @@ function eventFilter(events, currentDate) {
     return dataFilter;
 }
 
-showData(pastContainer, dateFilter)
+showData(container, dateFilter)
