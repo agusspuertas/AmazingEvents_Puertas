@@ -84,6 +84,12 @@ main{
   padding: 0.3rem 1rem 0.4rem 1rem;
 }
 
+.statsTable{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .table{
   height: 50rem;
 }

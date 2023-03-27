@@ -1,16 +1,10 @@
-let container = document.getElementById('past-container');
-
-let dateFilter = eventFilter(data.events, data.currentDate);
-events = dateFilter 
-
-function eventFilter(events, currentDate) {
-    let dataFilter = []
-    for (i = 0; i <events.length; i++) {
-        if (events[i].date < currentDate) {
-            dataFilter.push(events[i]);
-        };
-    };
-    return dataFilter;
+async function pastEvents(){
+    let  dataEvents = await getData();
+    arrayEvents = dataEvents.events
+    let currentDate = dataEvents.currentDate;
+    arrayEvents = arrayEvents.filter(
+        (data) => Date.parse(currentDate) > Date.parse(data.date)
+    );
+   cards(arrayEvents)
 }
-
-showData(container, dateFilter)
+pastEvents()

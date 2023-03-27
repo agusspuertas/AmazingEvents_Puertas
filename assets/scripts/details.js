@@ -1,10 +1,8 @@
-let container = document.getElementById ('detailContainer')
-let events = data.events
+let containerDetail = document.getElementById ('detailContainer')
+
 let queryString = document.location.search
 let params = new URLSearchParams(queryString)
 let idEvent = params.get('id')
-let event = events.filter(ev => ev._id == idEvent)
-detailCard (event)
 function detailCard (array){
     let htmlDetailCard= ''
     for (const element of array) {
@@ -38,5 +36,17 @@ function detailCard (array){
         </div>
         `
     }
-    container.innerHTML = htmlDetailCard
+    containerDetail.innerHTML = htmlDetailCard
 }
+
+function filterDetail (events){
+    let event = events.filter(e => e._id == idEvent)
+    return event
+}
+
+async function inciarDetail (){
+    let eventos = await getData();
+    arrayEvents = eventos.events
+    detailCard(filterDetail(arrayEvents))
+}
+inciarDetail()
